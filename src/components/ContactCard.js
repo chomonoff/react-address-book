@@ -1,7 +1,6 @@
 import React from 'react';
 import EditContact from './EditContact';
 import DeleteContact from './DeleteContact';
-
 //destructure props and render
 function ContactCard({ contact }) {
 	return (
@@ -10,14 +9,6 @@ function ContactCard({ contact }) {
 			<address className="card__address_block">
 				<p>
 					{contact.firstLine}
-					<br />
-					{contact.secondLine}
-					<br />
-					{contact.town}
-					<br />
-					{contact.county}
-					<br />
-					{contact.postcode}
 					<br />
 				</p>
 			</address>

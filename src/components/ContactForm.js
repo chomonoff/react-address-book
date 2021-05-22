@@ -5,14 +5,8 @@ import { addContact } from '../actions';
 function ContactForm({ addContact }) {
 	const [contact, setNewContact] = useState({
 		name: '',
-		firstLine: '',
-		secondLine: '',
-		town: '',
-		county: '',
-		postcode: '',
 		email: '',
 		phone: '',
-		date: '',
 	});
 
 	const handleChange = (e) => {
@@ -26,11 +20,6 @@ function ContactForm({ addContact }) {
 		addContact({ ...contact, date: Date.now(), editing: false });
 		setNewContact({
 			name: '',
-			firstLine: '',
-			secondLine: '',
-			town: '',
-			county: '',
-			postcode: '',
 			email: '',
 			phone: '',
 		});
@@ -46,41 +35,6 @@ function ContactForm({ addContact }) {
 					name="name"
 					placeholder="name"
 					required
-				/>
-				<input
-					value={contact.firstLine}
-					onChange={handleChange}
-					type="text"
-					name="firstLine"
-					placeholder="first line"
-				/>
-				<input
-					value={contact.secondLine}
-					onChange={handleChange}
-					type="text"
-					name="secondLine"
-					placeholder="second line"
-				/>
-				<input
-					value={contact.town}
-					onChange={handleChange}
-					type="text"
-					name="town"
-					placeholder="town"
-				/>
-				<input
-					value={contact.county}
-					onChange={handleChange}
-					type="text"
-					name="county"
-					placeholder="county"
-				/>
-				<input
-					value={contact.postcode}
-					onChange={handleChange}
-					type="text"
-					name="postcode"
-					placeholder="postcode"
 				/>
 				<input
 					value={contact.email}

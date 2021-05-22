@@ -15,7 +15,7 @@ function ContactList({ contactList }) {
 					)
 				)
 			) : (
-				<p>No Contacts!</p>
+				<p>Задание сделано с учетом CRUD C-create, R-read, U-update, D-delete, БД не подключена, то есть при обновлении страницы сохраненные контакты пропадут</p>
 			)}
 		</div>
 	);

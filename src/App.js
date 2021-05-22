@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Address Book</h1>
+        <h1>Contact Book</h1>
       </header>
+      <p className="TextAuthor">HW Almaz Chomonov</p>
       <main>
         <OpenFormButton
           displayForm={displayForm}

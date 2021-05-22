@@ -5,11 +5,6 @@ import { updateContact, toggleEditContact } from '../actions';
 function EditContactForm({ contact, updateContact, toggleEditContact }) {
 	const [updatedContact, setUpdatedContact] = useState({
 		name: '',
-		firstLine: '',
-		secondLine: '',
-		town: '',
-		county: '',
-		postcode: '',
 		email: '',
 		phone: '',
 	});
@@ -48,41 +43,6 @@ function EditContactForm({ contact, updateContact, toggleEditContact }) {
 				name="name"
 				placeholder="name"
 				required
-			/>
-			<input
-				value={updatedContact.firstLine}
-				onChange={handleChange}
-				type="text"
-				name="firstLine"
-				placeholder="first line"
-			/>
-			<input
-				value={updatedContact.secondLine}
-				onChange={handleChange}
-				type="text"
-				name="secondLine"
-				placeholder="second line"
-			/>
-			<input
-				value={updatedContact.town}
-				onChange={handleChange}
-				type="text"
-				name="town"
-				placeholder="town"
-			/>
-			<input
-				value={updatedContact.county}
-				onChange={handleChange}
-				type="text"
-				name="county"
-				placeholder="county"
-			/>
-			<input
-				value={updatedContact.postcode}
-				onChange={handleChange}
-				type="text"
-				name="postcode"
-				placeholder="postcode"
 			/>
 			<input
 				value={updatedContact.email}
